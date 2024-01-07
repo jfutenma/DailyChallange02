@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="corpo">
+        <div class="esq">
+          <div class="title"><span id="title-esq">Your Result</span><br /></div>
+          <div class="circle">
+            <h1 id="result">76</h1>
+            <p id="number">of 100</p>
+          </div>
+          <h1 id="great">Great</h1>
+          <p id="info">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+        <div class="dir">
+          <div id="title-dir">Summary</div>
+
+          <div class="lista">
+            <div id="reaction" class="categoria">
+              <div class="titulo-cat">
+                <img
+                  class="icon"
+                  src="assets/images/icon-reaction.svg"
+                  alt=""
+                />
+                <p class="n-c" id="t-r">Reaction</p>
+              </div>
+              <div class="porcentagem">
+                <p class="perc">80</p>
+                <p class="cem">/ 100</p>
+              </div>
+            </div>
+
+            <div id="memory" class="categoria">
+              <div class="titulo-cat">
+                <img class="icon" src="assets/images/icon-memory.svg" alt="" />
+                <p class="n-c" id="t-m">Memory</p>
+              </div>
+              <div class="porcentagem">
+                <p class="perc">92</p>
+                <p class="cem">/ 100</p>
+              </div>
+            </div>
+            <div id="verbal" class="categoria">
+              <div class="titulo-cat">
+                <img class="icon" src="assets/images/icon-verbal.svg" alt="" />
+                <p class="n-c" id="t-ve">Verbal</p>
+              </div>
+              <div class="porcentagem">
+                <p class="perc">61</p>
+                <p class="cem">/ 100</p>
+              </div>
+            </div>
+            <div id="visual" class="categoria">
+              <div class="titulo-cat">
+                <img class="icon" src="assets/images/icon-visual.svg" alt="" />
+                <p class="n-c" id="t-vi">Visual</p>
+              </div>
+              <div class="porcentagem">                
+                <p class="perc">72</p>
+                <p class="cem">/ 100</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#"><div class="btn">Continue</div></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Juliana Futenma</a>.
+    </div>
+  </body>
+</html>

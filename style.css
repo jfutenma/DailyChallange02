@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap');
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 96vh;
+}
+
+.corpo{
+    background-color: white;
+    border-radius: 30px;
+    width: 650px;
+    height: 450px;
+    box-shadow: hsla(241, 100%, 89%, 0.4) 0px 7px 29px 0px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* LADO ESQUERDO */
+
+.esq{
+    display: inline-flexbox;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 30px;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title{
+    padding: 30px;
+}
+
+#title-esq{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: hsl(241, 100%, 89%);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.circle{
+    margin: auto;
+    width: 185px;
+    height: 185px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#result{
+    color: white;
+    font-weight: 800;
+    font-size: 70px;
+}
+
+#number{
+    margin: 0;
+    color: hsla(241, 100%, 89%, 60%);
+}
+
+#great{  
+    font-size: 28px;
+    margin: 20px;
+    font-weight: 500;
+}
+
+#info{
+    color: hsl(241, 100%, 89%);
+    width: 70%;
+    margin: auto;
+}
+
+
+
+
+/* LADO DIREITO */
+
+.dir{
+    display: inline-flexbox; 
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#title-dir{
+    padding: 30px;
+    text-align: start;
+    font-weight: 800;   
+    font-size: 22px;
+    color:hsl(224, 30%, 27%);
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categoria{
+    display: flex;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.categoria p{
+    display: inline;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.titulo-cat{
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    width: 50%;
+}
+
+.icon{
+    margin-right: 10px;
+}
+
+.n-c{
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color:hsl(224, 30%, 27%);
+}
+
+.porcentagem{
+    justify-content: center;
+    width: 50%;
+    display: flex;
+    align-items: center; 
+}
+
+.cem{
+    color: hsla(224, 30%, 27%, 50%);    
+    margin-left: 10px;
+}
+
+#reaction{
+    background-color: hsla(0, 100%, 67%, 5%);
+}
+
+#t-r{
+    color: hsl(0, 100%, 67%);
+}
+
+#memory{
+    background-color: hsla(39, 100%, 56%, 5%);
+}
+
+#t-m{
+    color:hsl(39, 100%, 56%);
+}
+
+#verbal{
+    background-color: hsla(166, 100%, 37%, 5%);
+}
+
+#t-ve{
+    color:hsl(166, 100%, 37%);
+}
+
+#visual{
+    background-color: hsla(234, 85%, 45%, 5%);
+
+}
+
+#t-vi{
+    color:hsl(234, 85%, 45%);
+}
+
+.btn{
+    display: flex;
+    width: 80%;
+    height: 50px;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.btn:hover{
+    display: flex;
+    width: 80%;
+    height: 50px;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 20px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+/* TAGS */
+a{
+    text-decoration: none;
+}
+
+h2{
+    margin: 0;
+    font-size: 18px;
+}
+
+
+h1{
+    color: white;
+    margin: 0;
+}
+
+@media (max-width: 510px) {
+
+    body{
+        margin: 0;
+    }
+
+    .container{
+        display: flex;
+        height: 96vh;
+        padding: 0;
+    }
+
+    .corpo{
+        height: auto;
+        border-radius: 0;
+        padding-bottom: 30px;
+        margin-bottom: 5px;
+    }
+
+    .esq, .dir {
+        width: 100%; /* Ambas ocupam a largura total */
+    }
+
+    .esq{
+        border-radius: 0 0 20px 20px;
+        padding-bottom: 30px;
+    }
+
+
+    #info{
+        color: hsl(241, 100%, 89%);
+        width: 80%;
+        margin: auto;
+    }
+
+    .circle{
+        width: 150px;
+        height: 150px;
+    }
+
+    #result{
+        color: white;
+        font-weight: 800;
+        font-size: 60px;
+    }
+
+  }
